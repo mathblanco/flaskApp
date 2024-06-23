@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Sentimento - Introdução</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo à Aplicação de Análise de Sentimento!</h1>
+        <p>Esta aplicação pythonFlask utiliza o conjunto de dados um modelo de machine learning treinado para prever o sentimento (positivo ou negativo) de críticas de filmes. O modelo foi desenvolvido utilizando o algoritmo de Naive Bayes com vetorização de texto. O treinamento utilizou o IMDB Dataset, um conjunto de dados em inglês que contém avaliações de filmes e seus sentimentos associados</p>
+        <p>Para mais detalhes sobre o treinamento do modelo, você pode acessar o notebook Jupyter utilizado no GitHub:</p>
+        <a href="https://github.com/mathblanco/blanco/blob/main/python/sentimentAnalysis.ipynb" target="_blank">Detalhes do Treinamento do Modelo</a>
+        <br><br>
+        <a href="{{ url_for('predict_form') }}"><button>Inserir Texto para Predição</button></a>
+    </div>
+</body>
+</html>
+
